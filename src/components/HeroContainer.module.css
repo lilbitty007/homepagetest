@@ -1,0 +1,199 @@
+.host {
+  color: var(--accent);
+}
+.findAHostContainer {
+  position: relative;
+  line-height: 110%;
+  display: inline-block;
+  max-width: 100%;
+}
+.discoverTheBest {
+  margin: 0;
+  position: relative;
+  font-size: var(--font-size-xl);
+  line-height: 120%;
+  font-weight: 300;
+  font-family: inherit;
+}
+.priceDisplay {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 8px 0;
+  max-width: 100%;
+}
+.aircoverSection {
+  flex: 1;
+  position: relative;
+  line-height: 22px;
+  display: inline-block;
+  mix-blend-mode: normal;
+  max-width: calc(100% - 35px);
+}
+.iconhome {
+  height: 25px;
+  width: 25px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.autocompletebasic {
+  width: 543px;
+  border-radius: var(--br-9xs);
+  background-color: var(--white);
+  border: 1px solid var(--color-gainsboro);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-mid) var(--padding-smi) var(--padding-mid)
+    var(--padding-2xs);
+  gap: 0 10px;
+  flex: 0.9556;
+  max-width: calc(100% - 713px);
+}
+.label {
+  position: relative;
+  line-height: 22px;
+  mix-blend-mode: normal;
+}
+.iconuser {
+  height: 25px;
+  width: 25px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  min-height: 25px;
+}
+.grouped,
+.ratingcontainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  box-sizing: border-box;
+}
+.ratingcontainer {
+  flex: 1;
+  border-radius: var(--br-9xs);
+  background-color: var(--white);
+  border: 1px solid var(--color-gainsboro);
+  justify-content: space-between;
+  padding: var(--padding-mid) var(--padding-xs);
+  min-width: 62px;
+  gap: var(--gap-xl);
+}
+.grouped {
+  width: 543px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding: 0 var(--padding-11xs) 0 0;
+  gap: 0 14px;
+  color: var(--color-gray-100);
+}
+.iconsearch {
+  height: 19px;
+  width: 19px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.button {
+  position: relative;
+  letter-spacing: 0.46px;
+  line-height: 26px;
+  font-weight: 500;
+}
+.searchButton {
+  border-radius: var(--br-9xs);
+  background-color: var(--accent);
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-mini) var(--padding-11xl);
+  gap: 0 8px;
+  text-align: center;
+  font-size: var(--font-size-base);
+  color: var(--white);
+  font-family: var(--font-archivo);
+}
+.form,
+.starsContainer {
+  display: flex;
+  justify-content: flex-start;
+}
+.form {
+  align-self: stretch;
+  border-radius: var(--br-3xs);
+  background-color: var(--white);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.02);
+  border: 0.7px solid var(--light-grey-border);
+  box-sizing: border-box;
+  overflow-x: auto;
+  flex-direction: row;
+  align-items: center;
+  padding: var(--padding-3xs) var(--padding-smi) var(--padding-3xs)
+    var(--padding-2xs);
+  gap: 0 14px;
+  max-width: 100%;
+  font-size: var(--font-size-sm);
+  font-family: var(--font-roboto);
+}
+.starsContainer {
+  width: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px 0;
+  max-width: 1280px;
+}
+.heroContainer,
+.subtitleElements {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+}
+.subtitleElements {
+  align-items: center;
+  justify-content: flex-end;
+  padding: var(--padding-11xl);
+  box-sizing: border-box;
+  background-image: url(/public/subtitle-elements@3x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  min-height: 264px;
+}
+.heroContainer {
+  align-items: flex-start;
+  justify-content: flex-start;
+  text-align: left;
+  font-size: var(--font-size-21xl-4);
+  color: var(--color-black);
+  font-family: var(--font-archivo);
+}
+@media screen and (max-width: 1275px) {
+  .starsContainer {
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 750px) {
+  .findAHostContainer {
+    font-size: var(--font-size-13xl);
+    line-height: 36px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .findAHostContainer {
+    font-size: var(--font-size-5xl);
+    line-height: 27px;
+  }
+  .discoverTheBest {
+    font-size: var(--font-size-base);
+    line-height: 19px;
+  }
+}
